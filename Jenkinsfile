@@ -11,19 +11,5 @@ node {
 
     }
     
-    stage('Deploy to Kubernetes') {
 
-      steps {
-
-        kubernetesDeploy(
-
-          configs: 'deploy.yaml',
-
-          kubeconfigId: 'my-kubeconfig'
-
-        )
-
-      }
-
-    }
 }
